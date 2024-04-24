@@ -1,0 +1,87 @@
+.wrapper {
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing {
+    width: 100%;
+    content: '.';
+    animation: typing 2s steps(22), blink .5s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.About_Page{ 
+    display: flex;
+    height: 100%;
+    background-image: url("./image3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 2rem;
+}
+.About_part2{
+    align-content: center;
+    width:38%;
+    padding: 1rem;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: #e4b282;
+    box-shadow: 3px 3px black;
+    opacity: 0.85;
+}
+.About_part2 a{
+    text-decoration: none;
+    color: rgb(43, 43, 213);
+}
+.About_full_page{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* align-content: center; */
+    height: 100vh;
+    background-image: linear-gradient(
+        180deg,
+        hsl(20deg 52% 37%) 0%,
+        hsl(22deg 45% 43%) 10%,
+        hsl(24deg 40% 50%) 20%,
+        hsl(26deg 45% 56%) 30%,
+        hsl(28deg 53% 63%) 40%,
+        hsl(29deg 64% 70%) 50%,
+        hsl(30deg 56% 65%) 60%,
+        hsl(30deg 49% 60%) 70%,
+        hsl(31deg 45% 54%) 80%,
+        hsl(32deg 42% 49%) 90%,
+        hsl(33deg 48% 44%) 100%
+      );
+}
+@media only screen and (max-width:768px){
+  .About_part2{
+    width:100%;
+    opacity: 0.8;
+    margin-right:5% ;
+    height: 100vh;
+    margin-top: 0%;
+  }
+  .About_Page{
+    padding: 0;
+    opacity:1;
+    padding-top: 2rem;
+  }
+}

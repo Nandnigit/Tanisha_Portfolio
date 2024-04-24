@@ -1,0 +1,68 @@
+.project_page{
+    /* height:100vh; */
+    padding: 2rem;
+    /* background-image: url("./project_image1.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* opacity: 0.8; */
+}
+.project_inner_div{
+/*     
+    height: 100vh; */
+    color:#e4e6e0;
+    padding: 2rem;
+    
+}
+.project_inner_div h1{
+    text-align: center;
+    color: black;
+}
+.Projects_list{
+    /* display: flex; */
+    background-color:#332315be;
+    /* height:180vh; */
+    border: 2px solid #332315b1;
+    border-radius: 20px;
+    padding: 2rem;
+}
+.Residential,.Commercial,.D_Views{
+    border:2px solid white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+.Residential img{
+    border:2px solid white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+.Commercial img{
+    border:2px solid white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+.D_Views img{
+    border:2px solid white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+@media only screen and (max-width:768px){
+    .project_inner_div{
+        padding:0;
+    }
+    .project_inner_div h1{
+       padding-top: 5rem;
+    }
+    .project_page{
+        padding: 0;
+        
+    }
+    .project_page img{
+        width:100%;
+        height:auto;
+        padding: 1rem;
+    }
+}
